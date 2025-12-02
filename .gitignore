@@ -1,19 +1,15 @@
-# --- Python & Cache ---
 __pycache__/
 *.py[cod]
 
-# --- PyInstaller (Build & Dist) ---
 build/
 dist/
 
-# --- Date Locale & Loguri ---
 *.db
 chat.db
 *.log
 server.log
 local_users.txt
 
-# --- SECRETE & CHEI (CRITIC: Nu urca astea!) ---
 *.key
 common_chacha.key
 *.pem
@@ -22,6 +18,5 @@ chacha_rsa_public.pem
 *.enc
 common_chacha.enc
 
-# --- Setari Editor (Optional) ---
 .vscode/
 .idea/
