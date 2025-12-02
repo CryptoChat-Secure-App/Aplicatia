@@ -40,11 +40,11 @@ Aplicația este construită modular, separând logica de rețea, criptografia, b
 | **GUI** | Tkinter | Interfața utilizatorului |
 
 ---
+## 📂 Structura Proiectului
 
-## ⚙️ Instalare și Rulare
-
-### 1. Clonează Repository-ul
-Descarcă codul sursă pe mașina ta locală:
-```bash
-git clone [https://github.com/OrganizatiaTa/CryptoChat-Core.git](https://github.com/OrganizatiaTa/CryptoChat-Core.git)
-cd CryptoChat-Core
+* **`server.py`**: Nucleul backend. Gestionează conexiunile WebSocket, rutarea mesajelor, logica de rate-limit și interacțiunea cu baza de date.
+* **`client_gui.py`**: Aplicația client. Gestionează interfața grafică, criptarea/decriptarea locală și firul de execuție pentru rețea.
+* **`database.py`**: Stratul de persistență. Conține funcțiile SQL pentru gestionarea utilizatorilor, contactelor și mesajelor offline.
+* **`crypto_lib.py`**: Librăria de securitate. Implementează funcțiile pentru RSA, ChaCha20-Poly1305 și Argon2.
+* **`chat.db`**: Baza de date SQLite (generată automat).
+* **`server.log`**: Fișierul de jurnalizare a activității serverului.
